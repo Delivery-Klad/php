@@ -1,5 +1,3 @@
-var server_response = document.querySelector('#city');
-
 document.forms.testform.symbol.onkeyup = function(e){
     e.preventDefault();
     var some_data = document.forms.testform.symbol.value;
@@ -14,5 +12,5 @@ document.forms.testform.symbol.onkeyup = function(e){
             document.forms.testform.city.value = xhr.responseText;
         }
     }
-    xhr.send('symbol=' + some_data)
+    xhr.send('symbol=' + some_data);
 }
